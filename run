@@ -1,12 +1,11 @@
 #!/usr/bin/env php
 <?php
 
+include 'src/Dates/BirthDates.php';
+
 $birthDate = "2001-02-06";
-$todayDate = date("Y-m-d");
 
-$birthTime = strtotime($birthDate);
-$todayTime = strtotime($todayDate);
+$days = new \Yarosh\Dates\BirthDates($birthDate);
+$totalDays = $days->findTotalDays();
 
-$totalSecs = $todayTime - $birthTime;
-$totalDays = floor($totalSecs / 3600 / 24);
 echo "$birthDate : $totalDays\n";
