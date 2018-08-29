@@ -1,0 +1,19 @@
+{
+    "name": "yarosh/dates",
+    "description": "Find days number from birthday to today",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew",
+            "email": "yarosh.andrey2001@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+            "psr-4": {
+                "Yarosh\\" : "src"
+            }
+    }
+            
+}
